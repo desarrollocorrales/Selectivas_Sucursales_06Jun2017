@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SelectivasEnSucursales.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Configuracion" Type="ClasesDeConfiguracion.ConfiguracionFB" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Almacen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Sucursal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sucursal</Value>
+    </Setting>
+    <Setting Name="URLWebService" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://</Value>
+    </Setting>
+    <Setting Name="SelectivasEnSucursales_SegConService_SegConWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://servidorx:82/SegCoServices/ServicioWeb.asmx</Value>
+    </Setting>
+    <Setting Name="URLWebServiceFriolala" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://servidor:84/SegConFriolala/ServicioWeb.asmx</Value>
+    </Setting>
+    <Setting Name="SelectivasEnSucursales_WebServiceFriolala_ServicioWeb" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.23.18.85:84/segconfriolala/ServicioWeb.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

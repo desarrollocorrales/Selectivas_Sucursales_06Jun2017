@@ -1,0 +1,9 @@
+D:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\bin\Debug\ClasesDeConfiguracion.dll
+D:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\bin\Debug\ClasesDeConfiguracion.pdb
+D:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\obj\Debug\ClasesDeConfiguracion.csprojResolveAssemblyReference.cache
+D:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\obj\Debug\ClasesDeConfiguracion.dll
+D:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\obj\Debug\ClasesDeConfiguracion.pdb
+G:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\bin\Debug\ClasesDeConfiguracion.dll
+G:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\bin\Debug\ClasesDeConfiguracion.pdb
+G:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\obj\Debug\ClasesDeConfiguracion.dll
+G:\Github\Selectivas-Sucursales\ClasesDeConfiguracion\obj\Debug\ClasesDeConfiguracion.pdb
