@@ -44,8 +44,8 @@
             this.btnConfigurar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridExistencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.articuloBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvExistencia)).BeginInit();
@@ -94,6 +94,7 @@
             this.gridExistencia.TabIndex = 3;
             this.gridExistencia.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvExistencia});
+            this.gridExistencia.ProcessGridKey += new System.Windows.Forms.KeyEventHandler(this.gridExistencia_ProcessGridKey);
             // 
             // articuloBindingSource
             // 
@@ -124,6 +125,7 @@
             this.gvExistencia.GridControl = this.gridExistencia;
             this.gvExistencia.Name = "gvExistencia";
             this.gvExistencia.OptionsView.ShowGroupPanel = false;
+            this.gvExistencia.ShownEditor += new System.EventHandler(this.gvExistencia_ShownEditor);
             // 
             // colClavePrincipal
             // 
@@ -179,7 +181,7 @@
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnImprimir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnImprimir.Location = new System.Drawing.Point(359, 533);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(75, 28);
@@ -192,26 +194,16 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 34);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F);
+            this.label2.Location = new System.Drawing.Point(230, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(230, 18);
+            this.label2.Size = new System.Drawing.Size(332, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Selectivas de Almacén - Abarrotes";
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(279, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Carnicerias Los Corrales";
-            // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLimpiar.Location = new System.Drawing.Point(12, 533);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 28);
@@ -220,15 +212,26 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(674, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "DEMO";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // FrmAbarrotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 573);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnConfigurar);
             this.Controls.Add(this.gridExistencia);
             this.Controls.Add(this.btnBuscar);
@@ -238,8 +241,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAbarrotes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Selectivas para sucursales";
+            this.Load += new System.EventHandler(this.FrmAbarrotes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridExistencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.articuloBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvExistencia)).EndInit();
@@ -264,7 +268,7 @@
         private System.Windows.Forms.Button btnImprimir;
         private DevExpress.XtraGrid.Columns.GridColumn colClavePrincipal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label label7;
     }
 }

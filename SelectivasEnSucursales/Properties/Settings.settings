@@ -23,5 +23,8 @@
     <Setting Name="SelectivasEnSucursales_WebServiceFriolala_ServicioWeb" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://200.23.18.85:84/segconfriolala/ServicioWeb.asmx</Value>
     </Setting>
+    <Setting Name="accesoConfig" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

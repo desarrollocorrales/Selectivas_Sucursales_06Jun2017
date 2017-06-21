@@ -1,0 +1,4 @@
+G:\Github\Selectivas_Sucursales_06Jun2017\ClasesDeConfiguracion\bin\Release\ClasesDeConfiguracion.dll
+G:\Github\Selectivas_Sucursales_06Jun2017\ClasesDeConfiguracion\bin\Release\ClasesDeConfiguracion.pdb
+G:\Github\Selectivas_Sucursales_06Jun2017\ClasesDeConfiguracion\obj\Release\ClasesDeConfiguracion.dll
+G:\Github\Selectivas_Sucursales_06Jun2017\ClasesDeConfiguracion\obj\Release\ClasesDeConfiguracion.pdb

@@ -112,6 +112,47 @@ namespace SelectivasEnSucursales.Controladores
             }
 
             return lstAlmacenes;
-        }  
+        }
+
+        public bool pruebaConn()
+        {
+            bool result = false;
+
+            Comando.Connection = Conexion;
+            Comando.CommandText = string.Format(
+            @"SELECT 
+                    ALMACEN_ID,
+                    NOMBRE
+                FROM
+                    ALMACENES");
+
+            Adapter.SelectCommand = Comando;
+            DataTable tbResultado = new DataTable();
+            Adapter.Fill(tbResultado);
+
+            result = true;
+
+            return result;
+        }
+
+        public string getFecha()
+        {
+            string result = Convert.ToString(DateTime.Now);
+
+            Comando.Connection = Conexion;
+            Comando.CommandText = string.Format(
+            @"select current_timestamp from rdb$database");
+
+            Adapter.SelectCommand = Comando;
+            DataTable tbResultado = new DataTable();
+            Adapter.Fill(tbResultado);
+
+            foreach (DataRow fila in tbResultado.Rows)
+                result = Convert.ToString(fila["current_timestamp"]);
+
+            DateTime dt = DateTime.Parse(result);
+
+            return dt.ToString("yyyy-MM-dd");
+        }
     }
 }
